@@ -27,6 +27,7 @@ class Course:
                   value += student.get_grade()
             return value/len(self.students)
       
+      
 s1 = Student("Tim", 19, 95)
 s2 = Student("Bill", 14, 78)
 s3 = Student("Leo", 24, 35)
@@ -34,6 +35,6 @@ s3 = Student("Leo", 24, 35)
 course = Course("Science", 2)
 course.add_student(s1)
 course.add_student(s2)
-course.add_student(s3)
+print(course.add_student(s3)) # prints False because max 2 Students for SCIENCE Course
 print(course.get_average_grade())
                   
