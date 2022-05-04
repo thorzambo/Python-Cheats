@@ -50,5 +50,9 @@ NOT COVERING: AKA CHECK: WORKS WITH REAL DATA? WORKS WITH REAL TRADES? WE WILL O
 2. # ------------------------------------------------------------------------------------------------------------------------
 
 API Basics and Course Configuration
+API: Application Programming Interface
+USe API to interact with someone else software
 
+Examples here will be with IEX Cloud API to gather stock market data to make investment decisions.
 
+ 
