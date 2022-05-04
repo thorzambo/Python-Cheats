@@ -19,6 +19,16 @@ class Person:
       #     else:
       #           return "Insegnate"
           return cls.__name__
+    
+    @staticmethod
+    def info_prog():
+          info = """"
+          Name: Person
+          Author: ThorZambo
+          Age: 24
+          Shesh: Sheeeeeeeeeeeeeesh
+          """
+          return info
 
     def personal_info(self):
         info = f"""
@@ -87,17 +97,4 @@ class Teacher(Person):
             print("Fecher Updated")
 
 
-thor = "Thor, Torello, 4, Casa Zamba"
-
-
-p1 = Person.from_string(thor)
-print(p1.personal_info())
-
-
-t1 = Teacher.from_string(thor, ["cacca", "pipi", "pappa"])
-s1 = Student.from_string(thor, "cacca")
-print(t1.personal_info())
-print(s1.personal_info())
-
-print(t1.occupazione())
-print(s1.occupazione())
+print(Person.info_prog())
