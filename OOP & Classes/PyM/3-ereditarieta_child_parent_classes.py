@@ -88,6 +88,3 @@ t1.new_fech("Psico")
 
 print(s1.personal_info())
 print(t1.personal_info())
-
-
-

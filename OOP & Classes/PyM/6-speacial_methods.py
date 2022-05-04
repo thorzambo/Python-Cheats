@@ -7,27 +7,23 @@ class Person:
         self.age = age
         self.address = address
 
-    @classmethod  # alther methods, pass as parameter class and not instance
-    def from_string(cls, person_string, *args): # args, se ci sono vari parametri da poter aggiungere
-        name, surname, age, address = person_string.split(', ')
-        return cls(name, surname, age, address,*args)
-  
-    @classmethod
-    def occupazione(cls):
-      #     if cls.__name__ == "Studente":
-      #           return "Studente"
-      #     else:
-      #           return "Insegnate"
-          return cls.__name__
 
     def personal_info(self):
-        info = f"""
+         return f"""
             Name = {self.name}
             Surname = {self.surname}
             Age = {self.age}
             Address = {self.address}"""
-
-        return info
+ 
+    def __add__(self, other):
+          # Use Dunder
+          return self.name + ' ' + other.surname
+    
+    def __str__(self):
+          return f"The person {self.name} {self.surname}"
+    
+    def __repr__(self):
+          return f"Person ('{self.name}', '{self.surname}', '{self.age}', '{self.address}'"
 
 
 # special methods: Dunder double underscore = '__'
@@ -40,3 +36,19 @@ print(d)
 
 d = alphabet.__getitem__(4)
 print(d)
+
+# Built-in Types Python
+
+student1 = Person("Thor", "Zamba", 4, "4 fjfjdj")
+student2 = Person("Thur", "rega", 5, "848fh HHH")
+
+#print(student1 + student2)
+
+print(student1)
+print(repr(student1))
+
+print(Person.__str__(student1))
+print(Person.__repr__(student1))
+
+print(student1.__str__())
+print(student1.__repr__)

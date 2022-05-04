@@ -101,4 +101,3 @@ print(s1.personal_info())
 
 print(t1.occupazione())
 print(s1.occupazione())
-
