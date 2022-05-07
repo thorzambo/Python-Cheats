@@ -16,3 +16,15 @@ print(result)
 #round and int
 print(round(result, 3))
 print(int(result))
+
+
+# Python Order:
+# -------------
+# B Brackets
+# E Exponents
+# D Divisions
+# M Multiplications
+# A Additions
+# S Subtractions
+
+# Obv easier to use brackets
