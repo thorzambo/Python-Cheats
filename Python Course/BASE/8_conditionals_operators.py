@@ -22,5 +22,3 @@ print(ord('Z')) # -> 90
 print(3 > 5)
 print()
 print(3 < 5)
-
-
