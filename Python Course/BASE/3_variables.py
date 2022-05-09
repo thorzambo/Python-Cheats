@@ -17,5 +17,3 @@ print(mix)
 # only _
 # convention in python is _ not uppercase. for ex: java is helloWorld, in python is hello_world
 # can use capitals but not good to see conventionally speaking
-
-
