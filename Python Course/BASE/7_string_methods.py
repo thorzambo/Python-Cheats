@@ -29,3 +29,6 @@ print(x*y) # integer must be on left side
 print(x + "yes") # add stirngs
 
 
+# COUNT IS BETTER EXPLAINED INTO INTERMEDIATE DIRECTORY #
+
+
