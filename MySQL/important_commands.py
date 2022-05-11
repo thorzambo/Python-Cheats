@@ -1,5 +1,8 @@
 import mysql.connector
 from datetime import datetime
+# -----------------------------------------------
+''' SETUP AND BASIC QUERIES'''
+# -----------------------------------------------
 
 # MySQL Database.
 # Structure Queries Language.
@@ -15,6 +18,12 @@ db = mysql.connector.connect (
 )
 
 mycursor = db.cursor()
+
+
+# -----------------------------------------------
+''' CREATING TABLES. INSERTING AND SELECTING '''
+# -----------------------------------------------
+
 
 # First query we make will create the database
 #mycursor.execute("CREATE DATABASE TestDatabase")
@@ -52,6 +61,12 @@ for x in mycursor:
 #mycursor.execute("INSERT INTO Test (name, created, gender) VALUES (%s,%s,%s)", ("Thor", datetime.now(), "O"))
 #db.commit()
 
+
+
+# -----------------------------------------------
+''' SELECTING DATA AND ALTERING TABLES'''
+# -----------------------------------------------
+
 '''SELECT From Database a Particular Gender (in this case)'''
 #mycursor.execute("SELECT * FROM Test WHERE gender = 'M'")
 #mycursor.execute("SELECT * FROM Test WHERE gender = 'F'")
@@ -88,7 +103,9 @@ for x in mycursor:
 
 
 
-# FOREIGN KEYS & RELATING TABLES
+# -----------------------------------------------
+''' FOREIGN KEYS AND RELATING TABLES '''
+# -----------------------------------------------
 
 users = [("Leo", "zambo"),
          ("Thor", "Thorium"),
