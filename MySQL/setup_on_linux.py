@@ -40,3 +40,4 @@ db = mysql.connector.connect(
 mycursor = db.cursor()
 mycursor.execute("SHOW DATABASES")
 print(mycursor.fetchone())
+
